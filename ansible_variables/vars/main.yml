@@ -1,0 +1,8 @@
+---
+# vars file for ansible_variables
+processor: "{{ ansible_processor[2] }}"
+kernel: "{{ ansible_kernel }}"
+kernel_version: "{{ ansible_kernel_version }}"
+memory: "{{ ansible_devices.sda.size }} "
+date: " {{ ansible_date_time.date }}"
+time: " {{ ansible_date_time.time }}"

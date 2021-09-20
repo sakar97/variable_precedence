@@ -1,0 +1,10 @@
+---
+# tasks file for ansible_variables
+  - name: save to variable
+    set_fact:
+      processor: "{{ ansible_processor[2] }}"
+      kernel: "{{ ansible_kernel }} "
+  - name: write system details to a text file
+    template:
+      src: 'resources.txt.j2'
+      dest: '/home/resources.txt'

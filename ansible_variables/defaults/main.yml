@@ -1,0 +1,6 @@
+---
+# defaults file for ansible_variables
+processor: Intel Core2Duo
+kernel: Not Available
+kernel_version: NA
+memory: 8GB

@@ -1,0 +1,13 @@
+---
+ - hosts: localhost
+   connection: local
+   gather_facts: yes
+   roles:
+     - ansible_variables
+   vars:
+    kernel_version: "Not sure"
+    memory: "Not sure"
+   #tasks:
+    # - name: debugging the end of the playbooks
+     # debug:
+          # msg: var1={{ var1 | default("Undefined on the play level") }}  
